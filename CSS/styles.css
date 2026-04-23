@@ -1,0 +1,28 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+        
+     
+.titulo{/*clase*/
+  text-align: center;
+  font-size: 3.8rem;
+  color: blue;
+  /*text-transform: uppercase;*/
+}
+
+
+span{
+    font-size: 2rem;
+    color: darkgray;
+}
+
+/*
+h2 span{
+     a todos los espan que pertnecen a h2
+    font-size: 1rem;
+}*/
+    
