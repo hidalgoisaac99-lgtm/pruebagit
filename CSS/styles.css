@@ -11,11 +11,14 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;/*todos los elementos van a tener border box une el ancho con el padding*/
+
 }
 
 body{
     font-size: 16px;
     font-family: "krub", sans-serif;/*colocarlo aca para que aplique a todo*/
+    background-image: linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100%);
     /*font-weight: 400;*/
    /* background-color: yellow;*/
 }
@@ -115,6 +118,84 @@ body{
     background-image: url(../imagenes/imagendev.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    height: 450px;/*altura*/
+    padding: 20px;/*relleno*/
+    position: relative;
+}
+
+.contenido-hero{
+    position: absolute;
+    /*background-color: rgba(0, 0, 0, 0.7);/*pra ver la opacidad o transparente al color forma antigua*/
+    background-color: rgb(0 0 0 /60%);
+    width: 100%;/*amcho*/
+    height: 100%;/*altura*/
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+
+
+    /*alinear horizontal y vertical*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero p{
+    color: var(--blanco);
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;/*quita el subrayado*/
+    text-transform: uppercase;/*tranforma el texto en mayuscula*/
+    font-weight: bold;/*pone las letras en negrita*/
+    border-radius: 0.5;
+    width: 60%;
+    text-align: center;
+
+}
+
+@media(min-width: 480px){
+    .boton{
+        width: auto;
+    }
+      
+}
+
+.sombra{/*para aplicar sombras de alto relieve*/
+    box-shadow: 0px 5px 15px -3px #707070;
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.lenguajes{
+    display: grid;/*grid nos permite crear u ordenar en filas y columnas los elementos */
+    grid-template-columns: 300px 300px 300px 300px;
 }
 
 /*
