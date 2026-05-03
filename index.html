@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola mundo</title><!--titulo de pagina web-->
 
+    <link rel="preload" href="css/normalize.css" as ="style"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <link rel="preload" href="CSS/styles.css" as="style" />
     <link href="CSS/styles.css" rel="stylesheet"/>
@@ -27,20 +29,25 @@
         </h1><!--utilizar maximo un h1 por doc-->
     </header>
 
-    <nav>
+    <div class="nav-bg">
+        <nav class="navegacion-pricipal contenedor"><!--barra de navegacion-->
         <a href="index.html">Inicio</a><!--sirve para colocar enlaces-->
         <a href="unidades.html">Unidades</a>
         <a href="calificaciones.html">Calificaciones</a>
-        
-    </nav>
+        </nav>
+
+    </div>
     
-    <img src="imagenes/imagendev.jpg">
     
-    <section> 
+   <!--<img src="imagenes/imagendev.jpg">-->
+    
+    <section class="hero"> 
+    <div class="contenido-hero">   
     <p>Isaac Hidalgo Maridueña</p>
     <img src="iconos/contactar.svg">
     <p>Guayaquil, Ecuador</p>
     <a href="#">Contactar</a>
+    </div>
     </section>
    
     <main> 

@@ -15,10 +15,26 @@ html{
 
 body{
     font-size: 16px;
-    font-family: "krub", sans-serif;
-    font-weight: 400;
+    font-family: "krub", sans-serif;/*colocarlo aca para que aplique a todo*/
+    /*font-weight: 400;*/
+   /* background-color: yellow;*/
 }
         
+/*@media(min-wigth:480px){/*aproximadamente un telefono movil
+    body{
+        background-color: blue;
+    }
+
+}
+
+@media(min-wigth:768px){/*aproximadamente una tablet
+    body{
+        background-color: red;
+    }
+
+}*/
+
+
      
 .titulo{/*clase*/
   text-align: center;
@@ -35,6 +51,70 @@ body{
 .titulo span{
     font-size: 2rem;
     color: darkgray;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin-top: 0rem;
+    margin-right: auto;/* auto permite centrar*/
+    margin-bottom: 0rem;
+    margin-left: auto;
+    /*margin: 0 auto 0 auto; otra firma de hacerlo*/ 
+    /*margin: o auto; otra forma de hacerlo*/ 
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-pricipal{
+    
+    display: flex;
+    flex-direction: column;/*por defecto es row*/
+    /*justify-content: space-between;/*justifica los elementos del contenedor*/
+    /*align-items: center; el justify de colums, si queremos en colimnas*/
+}
+
+@media(min-width: 768px){
+    .navegacion-pricipal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+      
+}
+
+@media(min-width: 480px){
+      
+}
+
+@media(min-width: 1140px){
+      
+}
+
+@media(min-width: 1400px){
+      
+}
+
+.navegacion-pricipal a{
+    /*background-color: var(--primario);*/
+    display: block;/* para ver la forma q van ordenada las cosas*/
+    text-align: center;
+    padding: 1rem;/*relleno o espacio que se puede crear entre el contenido y el borde*/
+    color: var(--blanco);
+    text-decoration: none;/*para quitarle el subrayado x defecto*/
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-pricipal a:hover{/*hover es cuando se pone el mause o cursor sobre un elemento*/
+    background-color: var(--primario);
+    color: black;
+}
+
+.hero{
+    background-image: url(../imagenes/imagendev.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*
