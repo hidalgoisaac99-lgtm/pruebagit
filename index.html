@@ -53,78 +53,85 @@
    
     <main class="sombra"> <!--dentro del "main" va el contenido principal de la pagina-->
         <h2>Tecnologias:</h2>
-
+         
         <div class="lenguajes">
-             <section> <!--si tenemos un "headig o h1, h2, h3" 
+             <section class="lenguaje"> <!--si tenemos un "headig o h1, h2, h3" 
                 como primer hijo se recomienda usar "section"-->
              <h3>HTML:</h3>
+             <div class="iconos"><img src="iconos/html.svg" /></div>
+             
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at auctor 
               neque, nec venenatis tortor. Aliquam pharetra masa id volutpat.</p>
             </section>
 
-            <section>
+            <section class="lenguaje">
              <h3>CSS:</h3>
+             <div class="iconos"><img src="iconos/css.svg" /></div>
+             
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at auctor 
               neque, nec venenatis tortor. Aliquam pharetra masa id volutpat.
               </p>
             </section>
         
-        <section>
+        <section class="lenguaje">
              <h3>JavaScript:</h3>
+             <div class="iconos"><img src="iconos/javascript.svg" /></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at auctor 
         neque, nec venenatis tortor. Aliquam pharetra masa id volutpat.
         </p>
         </section>
 
-       <section>
+       <section class="lenguaje">
         <h3>PHP:</h3>
+        <div class="iconos"><img src="iconos/php.svg" /></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at auctor 
         neque, nec venenatis tortor. Aliquam pharetra masa id volutpat
         .</p>
        </section>
         </div>
  
-    </main>
-
-    <section>
-        <h2> </h2>
-    </section>
+    
    
 
     <section>
         <h2>Contacto</h2>
 
-        <form>
+        <form class="formulario">
             <fieldset>
                 <legend>Contactanos:</legend>
-                <div>
+
+                <div class="contenedor-campos">
+                <div class="campo">
                     <label>Nombre:</label>
-                    <input type="text" placeholder="Nombre"/>
+                    <input class="input-text" type="text" placeholder="Nombre"/>
                 </div>
 
-                <div>
+                <div class="campo">
                     <label>Correo:</label>
-                    <input type="email"/>
+                    <input class="input-text" type="email"/>
                 </div>
 
-                <div>
+                <div class="campo">
                     <label>Teléfono</label>
-                    <input type="tel"/> 
+                    <input class="input-text" type="tel"/> 
                 </div>
 
-                <div>
+                <div class="campo">
                     <label>Mansaje</label>
-                    <textarea></textarea>
+                    <textarea class="input-text"></textarea>
+                </div>
                 </div>
 
-                <div>
-                    <input type="submit" value="Enviar"/>
+                <div class="enviar">
+                    <input class="boton" type="submit" value="Enviar"/>
                 </div>
             </fieldset>
         </form>
     </section>
 
-    <footer><!--pie de pagina-->
+    </main>
+
+    <footer class="footer"><!--pie de pagina-->
         <p>Todos los derechos reservados. Hidalgo Isaac</p>
     </footer>
 
